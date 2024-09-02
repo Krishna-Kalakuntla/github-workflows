@@ -7,4 +7,4 @@ jobs:
     - name: Generate ASCII artwork
       run: |
         sudo apt-get install cowsay -y 
-        cowsay -f lion "Lion king" >> Leo.txt
+        cowsay -f dragon "dragon king"
