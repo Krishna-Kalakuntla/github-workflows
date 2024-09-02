@@ -8,8 +8,8 @@ jobs:
       uses: actions/checkout@v4
     - name: Welcome message
       run: |
-      echo "My first Github Action Job"
-      ls -a
-      cat README.md
+        echo "My first Github Action Job"
+        ls -a
+        cat README.md
     - name: Generate ASCII artwork
       run: cowsay -f lion "Lion king" >> Leo.txt
