@@ -12,9 +12,19 @@ jobs:
         ls -l
         chmod +x script.sh  
         ./script.sh
+    - name: Upload file Artifact
+      uses: actions/upload-artifact@v4
+      with:
+          name: my-artifact
+          path: leo.txt
   second_job:
     needs: first_job
     runs-on: ubuntu-latest
     steps:
+    - name: Upload file Artifact
+      uses: actions/download-artifact@v4
+      with:
+          name: my-artifact
+
     - name: Executing Shell script
       run: cat leo.txt
