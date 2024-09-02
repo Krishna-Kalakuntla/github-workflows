@@ -6,12 +6,5 @@ jobs:
     steps:
     - name: checkout repo
       uses: actions/checkout@v4
-    - name: Welcome message
-      run: |
-        echo "My first Github Action Job"
-        ls -a
-        cat README.md
-    - name: Generate ASCII artwork
-      run: |
-        sudo apt-get install cowsay -y 
-        cowsay -f dragon "Dragon king"
+    - name: Executing Shell script
+      run: ./script.sh
