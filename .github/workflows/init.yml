@@ -1,21 +1,20 @@
 name: initial-workflow
-on: 
-  workflow_dispatch:
+on: workflow_dispatch
   # push:
   #   branches:
   #     - 'main'
   #   paths-ignore:
   #     - "README.md"
-    inputs:
-        logLevel:
-          description: 'Log level'
-          required: true
-          default: 'warning'
-          type: choice
-          options:
-          - info
-          - warning
-          - debug
+    # inputs:
+    #     logLevel:
+    #       description: 'Log level'
+    #       required: true
+    #       default: 'warning'
+    #       type: choice
+    #       options:
+    #       - info
+    #       - warning
+    #       - debug
 jobs:
   first_job:
     runs-on: ubuntu-latest
