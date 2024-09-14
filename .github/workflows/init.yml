@@ -1,5 +1,7 @@
 name: initial-workflow
 on:
+  workflow:
+  
   push:
     branches:
       - 'main'
