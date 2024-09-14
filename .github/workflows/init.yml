@@ -4,7 +4,7 @@ on:
     branches:
       - 'main'
     paths:
-      - "README.md"
+      - "!README.md"
 jobs:
   first_job:
     runs-on: ubuntu-latest
@@ -15,7 +15,8 @@ jobs:
       run: |
         pwd
         ls -l
-        chmod +x script.sh  
+        chmod +x script.sh
+        echo "execution started"  
         ./script.sh
     - name: Upload file Artifact
       uses: actions/upload-artifact@v4
