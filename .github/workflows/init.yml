@@ -1,7 +1,6 @@
 name: initial-workflow
 on:
-  workflow:
-  
+  workflow_dispatch:
   push:
     branches:
       - 'main'
