@@ -16,7 +16,7 @@ jobs:
         pwd
         ls -l
         chmod +x script.sh
-        echo "execution started"  
+        echo "Script initiated"  
         ./script.sh
     - name: Upload file Artifact
       uses: actions/upload-artifact@v4
