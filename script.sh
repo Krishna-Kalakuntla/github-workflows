@@ -4,4 +4,4 @@ ls -a
 cat README.md
 echo "Generate ASCII artwork"
 sudo apt-get install cowsay -y 
-cowsay -f dragon "Dragon king" >> leo.txt
+cowsay -f dragon "Dragon king" >> dragon.txt
